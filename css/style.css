@@ -1,0 +1,131 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	text-decoration: none;
+}
+.top-nav{
+	background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(29,229,253,1) 50%, rgba(69,252,198,1) 100%);
+	border: 1px solid black;
+	height: 50px;
+}
+.side-nav{
+	background: linear-gradient(90deg, rgba(29,252,253,0.9108018207282913) 20%, rgba(235,29,253,1) 100%, rgba(69,252,250,1) 100%);
+	border: 1px solid black;
+	width: 70px;
+	height: 570px;
+	position: absolute;
+}
+.open-menu{
+	margin: 9px 13px 4px;
+	padding: 5px;
+	border:1px solid black;
+	border-radius: 5px;
+}
+.open-menu img{
+	color: #fff;
+	vertical-align: sub;
+}
+.task-head{
+	color: #fff;
+	margin: 25px 2px;
+	font-size: 24px;
+}
+.side-nav-icon{
+	margin: 17px;
+	vertical-align: sub;
+}
+.side-nav-icon-expand{
+	margin: 0px 20px;
+	font-size: 18px;
+	color: #fff;
+}
+.sidenav {
+  height: 570px;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 52px;
+  left: 0;
+  background: linear-gradient(90deg, rgba(29,252,253,0.9108018207282913) 20%, rgba(235,29,253,1) 100%, rgba(69,252,250,1) 100%);
+  overflow-x: hidden;
+  transition: 0.4s;
+}
+.mystyle{
+  width: 170px;
+}
+.iframe{
+	margin-left: 72px;
+}
+.iframe-data{
+	width: 1290px;
+	height: 565px;
+}
+tr:nth-child(even){
+	background:#fc45f8;
+}
+tr{
+	font-size:14px;
+}
+
+
+@media screen and (max-width: 1024px){
+	.side-nav{
+		height: 660px;
+	}
+	.sidenav{
+		height: 663px;
+	}
+	.iframe-data{
+		border: 1px solid black;
+		width: 949px;
+		height: 658px;
+	}
+}
+
+@media screen and (max-width: 768px){
+	.side-nav{
+		width: 60px;
+		height: 483px;
+	}
+	.iframe{
+		margin-left: 62px;
+	}
+	.iframe-data{
+		border: 1px solid black;
+		width: 704px;
+		height: 480px;
+	}
+}
+
+@media screen and (max-width : 425px){
+	.iframe-data{
+		border: 1px solid black;
+		width: 360px;
+	}
+}
+
+@media screen and (max-width: 375px){
+	.iframe-data{
+		border: 1px solid black;
+		width: 310px;
+		
+	}
+}
+@media screen and (max-width: 330px){
+	.side-nav{
+		width: 60px;
+		height: 483px;
+	}
+	.iframe{
+		margin-left: 62px;
+	}
+	.iframe-data{
+		border: 1px solid black;
+		width: 256px;
+		height: 480px;
+	}
+	tr{
+		font-size:10px;
+	}
+}
