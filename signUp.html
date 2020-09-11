@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="ISO-8859-1">
+    <title>new registration
+    </title>
+    <style type="text/css">
+      body{
+        background:rgb(239,239,239);
+        font-family: open sans,sans-serif;
+      }
+      .box{
+        background: #FFFFFF;
+        width: 800px;
+        margin: 50px auto 0px auto;
+        height: 535px;
+        border-radius:10px;
+      }
+      .box input, select{
+        padding: 9px;
+        margin: 1px 7px 7px 50px;
+        border:none;
+        outline:none;
+        border-radius:5px;
+        letter-spacing:1px;
+        background: rgb(242,242,242);
+      }
+      select{
+        width:100px;
+        margin: 30px 0px 0px 0px;
+      }
+      .box-head{
+        text-align: center;
+      }
+      .box label{
+        margin: 20px 5px 5px 50px;
+        color: black;
+      }
+      #email{
+        margin: 7px 7px 10px 65px;
+      }
+      #pass{
+        margin: 7px 7px 10px 53px;
+      }
+      #loc{
+        margin: 7px 7px 10px 65px;
+      }
+      #mobile-number{
+        margin: 0px 0px 0px 16px;
+      }
+      #pin{
+        margin: 0px 0px 0px 67px;
+      }
+      .box button{
+        text-align: center;
+        padding: 9px;
+        width: 300px;
+        margin:20px 0px 0px 0px;
+        background:;
+        border:1px solid rgb(37,84,214);
+        ouline:none;
+        border-radius:5px;
+        color: rgb(37,84,214);
+        transition: .7s;
+      }
+      .box button:hover{
+        background:rgb(37,84,214);
+        color: #fff;
+        width: 750px;
+      }
+      #dob{
+        margin: 0px 0px 0px 102px;
+      }
+      input[type="date"]{
+        width:170px;
+        margin:0px 0px 7px 50px;
+      }
+      #status{
+        margin: 0px 0px 7px 37px;
+        width:180px;
+      }
+      #address{
+        margin: 0px 0px 0px 83px;
+      }
+      textarea{
+        width:173px;
+        height:20px;
+        border:none;
+        outline:none;
+        border-radius: 5px;
+        background: rgb(242,242,242);
+      }
+      #textarea{
+        margin:7px 0px 0px 38px;
+      }
+      #blood{
+        margin:0px 0px 0px 48px;
+      }
+      #nid{
+        margin:4px 0px 0px 45px;
+      }
+      #edu{
+        margin: 7px 0px 7px 65px;
+      }
+      #passport{
+        width:169px;
+        margin:7px 0px 0px 60px;
+      }
+      #family{
+        margin:7px 0px 0px 47px;
+      }
+      #e-co{
+        margin:0px 0px 0px 0px;
+      }
+      #e-co1{
+        margin:0px 0px 0px 35px;
+      }
+      #gender{
+        margin:0px 0px 0px 75px;
+      }
+      #genderin{
+        width:180px;
+        margin:0px 0px 0px 51px;
+      }
+      .submit{
+        text-align: center;
+        margin: 10px 0px 0px 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <h2 class="box-head">Sign Up
+      </h2>
+      <form action="register.jsp" method="post">
+        <label for="fname">First name :
+        </label>
+        <input type="text" name="fname" required />
+        <label for="lname">Last name :
+        </label>
+        <input type="text" name="lname" required />
+        <label for="email" id="email">Email ID :
+        </label>
+        <input type="email" name="email" required />
+        <label for="mobile-number" id="mobile-number">Mobile Number :
+        </label>
+        <input type="tel" name="mobile-number" required />
+        <label for="password" id="pass">Password :
+        </label>
+        <input type="password" name="password" required />
+        <label for="location" id="loc">Location :
+        </label>
+        <input type="text" name="location" required />
+        <label for="pin-code" id="pin">Pin-code :
+        </label>
+        <input type="text" name="pin-code" required />
+        <label for="dob" id="dob">DOB :
+        </label>
+        <input type="date" name="dob" required>
+        <label for="gender" id="gender">Gender :
+        </label>
+        <select id="genderin" name="gender">
+          <option>Male
+          </option>
+          <option>Female
+          </option>
+          <option>Other
+          </option>
+        </select>
+        <label for="marital">Marital Status :
+        </label>
+        <select id="status" name="marital">
+          <option>Married
+          </option>
+          <option>Unmarried
+          </option>
+        </select>
+        <label for="address" id="address">Address :
+        </label>
+        <textarea name="address" id="textarea" required>
+        </textarea>
+        <label for="blood">Blood Group :
+        </label>
+        <input type="text" name="blood" id="blood" required>
+        <label for="nid">National Id :
+        </label>
+        <input type="text" name="nid" id="nid" required>
+        <label for="education">Education :
+        </label>
+        <input type="text" name="edu" id="edu" placeholder="eg : B.E/ CSE / 2020" required>
+        <label for="passport">Passport :
+        </label>
+        <input type="text" id="passport" name="passport" required>
+        <label for="family" id="family">Father Name :
+        </label>
+        <input type="text" name="family" required>
+        <label for="e-contact" id="e-co">Emergency Contact :
+        </label>
+        <input type="tel" id="e-co1" name="e-contact" required>
+        <div class="submit">
+          <button type="submit">Sign Up
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
